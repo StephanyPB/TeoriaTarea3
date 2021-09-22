@@ -11,10 +11,12 @@ namespace TeoriaTarea3
         // Aquí inicia la aplicacion
         static void Main(string[] args)
         {
-            Console.WriteLine("Elija una opcion: \n 1-Capitulo 6. \n 2-Capitulo 7. \n3-Salir \n");
+            Console.WriteLine("Elija una opcion: \n 1-Capitulo 6. \n2-Salir \n");
             int op = int.Parse(Console.ReadLine());
+            Console.Clear();
             switch (op)
             {
+                
                 case 1:
                     int cantidad = 0; // Cantidad de alumnos
                     int n = 0; // Variable de control de ciclo
@@ -30,7 +32,7 @@ namespace TeoriaTarea3
                     valor = Console.ReadLine();
                     cantidad = Convert.ToInt32(valor);
                     float[] calif = new float[cantidad];
-
+                    Console.Clear();
                     for (n = 0; n < cantidad; n++)
                     {
                         Console.Write("Dame la calificación ");
@@ -59,13 +61,8 @@ namespace TeoriaTarea3
                     Console.WriteLine("La calificación máxima es: " + maxima);
                     break;
                 case 2:
-                    
-
-            
-        
                     break;
-                case 3:
-                    break;
+               
             }
         }
     }
